@@ -1,0 +1,50 @@
++++++++++++++++++++++++++++++++++
++ 	QRBarCodeBridge 	+
++++++++++++++++++++++++++++++++++
+
+Context
+=========
+
+AMPATH regularly monitors how personal and official laptops are carried out of its premises. This is currently monitored using hard copy books that are manually recorded by the laptops' owners as they move in and out of AMPATH buildings. This process however takes too much time, is difficult to review and many of the hard copy books used are destroyed by weather elements drawing concerns with data integrity.
+
+This project aims to be the first step towards creating an automated process of monitoring laptop traffic. Laptops will now have printed barcodes/QR Codes attached. These codes will then be scanned everytime a user moves in or out of an AMPATH building. To facilitate this, android devices with a camera will be used to read the codes. The android device will then transmit the code reading to a desktop application that will map teh code to a specific device and record the entry or exit. 
+
+This project proposes the development of the first step of this project. The QRBarCodeBride will be a Java application that will:
+
+1. Poll an Android device to discover if a QR/BarCode reader functionality is available 
+2. Receive code readings from an android device
+3. Provide an API to transmit the code readinfgs to a java application 
+
+
+Requirements 
+=============
+
+1. Determine the best methodology to 'mark' laptop computers (QRCode or BarCodes)
+2. Create a bundled java jar application that is the QRBarCodeBridge
+3. Provide documentation on the QRBarCodeBridge API that other java applications can use 
+4. Provide tests for the application 
+
+Required Skills 
+==================
+
+1. Version control using git
+2. Java SE, Android Java 
+3. Unit testing 
+
+Proposed schedule
+===================
+
+Week 1 : Prepare Android QR/Barcode reader interface
+Week 2 & 3 :  Create QRBarCodeBridge with API for java applications 
+Week 4 : User Acceptance Testing 
+
+Libs intended for use
+=======================
+
+Mockito
+JUnit 
+zxing
+lambdaj
+ 
+
+
